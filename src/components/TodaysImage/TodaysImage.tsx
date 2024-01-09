@@ -22,7 +22,7 @@ const TodaysImage: FC<PostImage> = ({date,title,url}) => {
 const styles=StyleSheet.create({
 container:{
 backgroundColor:"#2C449D",
-marginVertical:16,
+marginVertical:8,
 marginHorizontal:24,
 borderRadius:32,
 padding:16,
@@ -42,7 +42,7 @@ borderRadius:32,
 },date:{
   color:"white",
   fontSize:16,
-  margin:12,
+  margin:6,
 
 },
 buttonContainer:{

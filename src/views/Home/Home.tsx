@@ -3,8 +3,13 @@ import { View, StyleSheet } from "react-native";
 import Header from "../../components/Header/Header";
 import fetchApi from "../../utils/fetch";
 import TodaysImage from "../../components/TodaysImage";
+import LastFiveDaysImages from "../../components/LastFiveDaysImages";
 import {PostImage} from "../../types"
 import { format,sub} from "date-fns";
+
+
+
+
 const Home = () => {
 
 const [todaysImage,setTodaysImage]=useState<PostImage>({})
@@ -56,6 +61,7 @@ console.log(lastFiveDaysImages);
     <View style={styles.container}>
       <Header/>
       <TodaysImage {... todaysImage}/>
+      <LastFiveDaysImages  postImages={lastFiveDaysImages}/>
     </View>
   );
 };
