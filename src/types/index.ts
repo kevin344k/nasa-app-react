@@ -7,3 +7,12 @@ export type PostImage={
     title?:string,
     url?:string
 }
+
+
+
+export type RootStackParams={
+    Home: undefined;
+    Detail:PostImage;
+    
+
+}
